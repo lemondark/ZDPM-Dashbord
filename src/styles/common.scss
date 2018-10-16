@@ -1,0 +1,161 @@
+@import 'vars';
+@import 'mixins';
+@import 'mapbox';
+
+// bigScreen
+.topHover {
+  .ivu-select-selection {
+    background: none !important;
+    border-color: rgba(76, 76, 76, 0.2) !important;
+    border: none !important;
+    box-shadow: 0 0 0 0px rgba(81, 106, 229, 0.2) !important;
+  }
+  .ivu-select-placeholder {
+    color: #E6FBFB !important;
+    border: none !important;
+  }
+  .ivu-select-selected-value {
+    color: #E6FBFB !important;
+  }
+  .ivu-select-dropdown {
+    background: #202D40 !important;
+    top: 16px !important;
+    .ivu-select-item {
+      color: #E6FBFB !important;
+    }
+    .ivu-select-item:hover {
+      color: black !important;
+    }
+  }
+}
+
+.vehicle_photo {
+  .ivu-input,.ivu-select-selection{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    .ivu-select-input {
+      color: #DAEBF6;
+    }
+  }
+}
+// // 大屏高度100%
+// .ivu-carousel {
+//   .ivu-carousel-list {
+//     height: 100% !important;
+//   }
+//   .ivu-carousel-track {
+//     height: 100% !important;
+//     .ivu-carousel-item {
+//       height: 100% !important;
+//     }
+//   }
+// }
+.el-carousel__arrow:hover, .el-carousel__arrow {
+  background-color: rgba(218,235,246,0.2) !important;
+  color:rgba(218,235,246,0.5) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+
+// login
+.login-form1 {
+  .ivu-form-item-error {
+    .ivu-input:focus, .ivu-input:hover {
+      border: 1px solid #ed3f14 !important;
+      border-left:none !important;
+    }
+  }
+}
+
+.login-form1 .logininfo {
+  .ivu-form-item {
+    background: #5B87D7;
+    margin-bottom: 7%  !important;
+  }
+  .ivu-input{
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    border-left:none;
+    color: #ffffff;
+  }
+  .ivu-input:focus, .ivu-input:hover {
+    border-left:none;
+    outline:none;
+    box-shadow: 0 0 0 0 white;
+    border-color: #dddee1;
+  }
+  .ivu-input-group-prepend{
+    background-color: rgba(0,0,0,0);
+  }
+  .ivu-btn-primary:hover {
+    color: #ffffff;
+    //background-color: #7488ea;
+    //border-color: #7488ea;
+  }
+}
+
+.login-form1 .vercode {
+  .ivu-form-item {
+    background: #5B87D7;
+    margin-bottom: 7%  !important;
+  }
+  .ivu-input{
+    background-color: rgb(91,135,215);
+    //border-left:none;
+    color: #ffffff;
+  }
+  .ivu-input:focus, .ivu-input:hover {
+    //border-left:none;
+    outline:none;
+    box-shadow: 0 0 0 0 white;
+    border-color: #dddee1;
+  }
+  .ivu-form-item-error {
+    .ivu-input:focus, .ivu-input:hover {
+      border: 1px solid #ed3f14;
+      //border-left:none;
+    }
+  }
+  .ivu-input-group-prepend{
+    background-color: rgba(0,0,0,0);
+  }
+}
+/* 大屏 */
+@media screen and (min-height: 802px) {
+  .login-form1 .logininfo {
+    .ivu-input {
+      height: 50px !important;
+      background-color: rgba(0,0,0,0);
+      border-left: none;
+      color: #ffffff;
+    }
+    .ivu-input-group-prepend{
+      background-color: rgba(0,0,0,0);
+    }
+  }
+}
+
+/* 小屏 */
+@media screen and (max-height: 801px) {
+  .login-form1 .logininfo {
+    .ivu-input {
+      height: 36px !important;
+      background-color: rgba(0,0,0,0);
+      border-left: none;
+      color: #ffffff;
+    }
+    .ivu-input-group-prepend{
+      background-color: rgba(0,0,0,0);
+    }
+  }
+}
+/* 行车日记样式修改 */
+.select .ivu-select-selection{
+  opacity:0.8;
+  border:none;
+}
+.select .ivu-select-selection .ivu-select-input{
+  background:rgba(0,0,0,0.8);
+  color:#fff;
+}
